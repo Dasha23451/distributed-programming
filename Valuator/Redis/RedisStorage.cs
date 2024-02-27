@@ -1,15 +1,18 @@
-﻿using StackExchange.Redis;
+﻿using Microsoft.Extensions.Configuration;
+using StackExchange.Redis;
 
 namespace Valuator.Redis
 {
     public class RedisStorage : IRedisStorage
     {
         private readonly IConnectionMultiplexer _connection;
+        private readonly IConfiguration Configuration;
 
-
-        public RedisStorage()
+        public RedisStorage(IConfiguration configuration)
         {
-            _connection = ConnectionMultiplexer.Connect("localhost,abortConnect=false");
+            Configuration = configuration;
+            var host = Configuration["RedisValues:HOST_NAME"];
+            _connection = ConnectionMultiplexer.Connect(host);
         }
 
         public void Save(string key, string value)
@@ -28,7 +31,9 @@ namespace Valuator.Redis
 
         public List<string> GetKeys()
         {
-            var keys = _connection.GetServer("localhost", 6379).Keys();
+            var host = Configuration["RedisValues:HOST_NAME"];
+            var port = Convert.ToInt32(Configuration["RedisValues:HOST_PORT"]);
+            var keys = _connection.GetServer(host, port).Keys();
 
             return keys.Select(item => item.ToString()).ToList();
         }
