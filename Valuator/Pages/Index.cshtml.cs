@@ -61,11 +61,15 @@ public class IndexModel : PageModel
 
     private static string GetRank(string text)
     {
+        if (String.IsNullOrEmpty(text))
+        {
+            return "0";
+        }
         double len = text.Length;
         double notLetterCount = 0;
         foreach (char value in text)
         {
-            if (!char.IsLetter(value)) 
+            if (!char.IsLetter(value))
             {
                 notLetterCount++;
             }

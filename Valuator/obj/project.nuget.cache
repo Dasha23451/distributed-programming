@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EFYoznqE2/dXvVlT1l+JknbF67xyEtzBBRHIl9KP5x6lh/6KU6WYLvl+8PMx06ZhR1edhQtVSwfJdk8zgag+Cg==",
+  "dgSpecHash": "/NCOrE35RGOhYHlqCqsKXs47kU+0KLQ2PUSF2wD2IBUQWDNfrPpu4D+bCXi1PgOj1iFpcGRtKP4fNNwiw73UxQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\dvnt\\source\\repos\\Distributed_programming\\ds-2024-pa1\\ds-2024-pa1\\Valuator\\Valuator.csproj",
+  "projectFilePath": "C:\\Users\\dvnt\\source\\repos\\Distributed_programming\\distributed-programming\\Valuator\\Valuator.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dvnt\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\8.0.0\\microsoft.extensions.caching.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\dvnt\\.nuget\\packages\\microsoft.extensions.caching.stackexchangeredis\\8.0.2\\microsoft.extensions.caching.stackexchangeredis.8.0.2.nupkg.sha512",

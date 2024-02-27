@@ -9,7 +9,7 @@ namespace Valuator.Redis
 
         public RedisStorage()
         {
-            _connection = ConnectionMultiplexer.Connect(Configs.HOST_NAME + ",abortConnect=false");
+            _connection = ConnectionMultiplexer.Connect("localhost,abortConnect=false");
         }
 
         public void Save(string key, string value)
@@ -28,7 +28,7 @@ namespace Valuator.Redis
 
         public List<string> GetKeys()
         {
-            var keys = _connection.GetServer(Configs.HOST_NAME, Configs.HOST_PORT).Keys();
+            var keys = _connection.GetServer("localhost", 6379).Keys();
 
             return keys.Select(item => item.ToString()).ToList();
         }

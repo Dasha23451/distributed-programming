@@ -475,11 +475,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dvnt\\source\\repos\\Distributed_programming\\ds-2024-pa1\\ds-2024-pa1\\Valuator\\Valuator.csproj",
+      "projectUniqueName": "C:\\Users\\dvnt\\source\\repos\\Distributed_programming\\distributed-programming\\Valuator\\Valuator.csproj",
       "projectName": "Valuator",
-      "projectPath": "C:\\Users\\dvnt\\source\\repos\\Distributed_programming\\ds-2024-pa1\\ds-2024-pa1\\Valuator\\Valuator.csproj",
+      "projectPath": "C:\\Users\\dvnt\\source\\repos\\Distributed_programming\\distributed-programming\\Valuator\\Valuator.csproj",
       "packagesPath": "C:\\Users\\dvnt\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dvnt\\source\\repos\\Distributed_programming\\ds-2024-pa1\\ds-2024-pa1\\Valuator\\obj\\",
+      "outputPath": "C:\\Users\\dvnt\\source\\repos\\Distributed_programming\\distributed-programming\\Valuator\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
