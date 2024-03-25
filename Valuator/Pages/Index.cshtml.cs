@@ -45,10 +45,6 @@ public class IndexModel : PageModel
 
         string textKey = "TEXT-" + id;
 
-        /*string rankKey = "RANK-" + id;
-        //TODO: посчитать rank и сохранить в БД по ключу rankKey 
-        _redisStorage.Save(rankKey, GetRank(text));*/
-
         string similarityKey = "SIMILARITY-" + id;
         //TODO: посчитать similarity и сохранить в БД по ключу similarityKey 
         _redisStorage.Save(similarityKey, GetSimilarity(text, id).ToString());
